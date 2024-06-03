@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 1 - JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="card">
+            <div class="img-card"></div>
+              <h6>Laptop Gamer AMD</h6>
+              <p>Precio base: $<span class="precio-inicial">40000</span> </p>
+        
+              <p>Cantidad:
+                <span class="cantidad">0</span>
+                <button onclick="
+                //actualizacion del contador 
+                let count = document.querySelector('.cantidad');
+                let precio = 40000 // = let precio = Number(document.querySelector('.precio-inicial'))
+                let add = Number(count.textContent) + 1
+                count.innerHTML = add   
+                //actualizacion del precio final
+                let preciofinal = add * precio
+                document.querySelector('.valor-total').innerHTML = preciofinal"
+                
+                >+</button>
+                
+                
+                <button onclick="
+                //actualizacion del cintador
+                let count = document.querySelector('.cantidad');
+                let rest = Number(count.textContent) -1
+                count.innerHTML = rest
+                const precio = 40000 
+                //actualizacion del precio    
+                preciofinal = rest * precio
+                document.querySelector('.valor-total').innerHTML = preciofinal"
+                
+                
+
+
+
+                >-</button>
+              </p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="total-section">
+        <p>Total a pagar: $<span class="valor-total">0</span>
+        <script>
+           const preciobase = 40000;
+
+
+           
+
+        </script> 
+        
+        
+        </p>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+</html>
